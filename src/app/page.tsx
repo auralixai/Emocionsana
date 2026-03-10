@@ -3,214 +3,255 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
+    <div className="min-h-screen bg-stone-50 text-stone-800 font-sans selection:bg-teal-200 selection:text-teal-900">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2 text-2xl font-bold text-teal-700">
+          <div className="flex items-center gap-3 text-2xl font-semibold text-teal-800">
             {/* Logo placeholder */}
-            <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center text-white text-sm">ES</div>
+            <div className="w-10 h-10 bg-gradient-to-br from-teal-500 to-emerald-600 rounded-full flex items-center justify-center text-white text-sm shadow-md">ES</div>
             Emoción Sana
           </div>
-          <nav className="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-            <a href="#solutions" className="hover:text-teal-600 transition">Corporate Solutions</a>
-            <a href="#impact" className="hover:text-teal-600 transition">Our Impact</a>
-            <a href="#sponsorship" className="hover:text-teal-600 transition">Become a Sponsor</a>
+          <nav className="hidden md:flex space-x-8 text-base font-medium text-stone-600">
+            <a href="#mission" className="hover:text-teal-600 transition-colors">Our Mission</a>
+            <a href="#solutions" className="hover:text-teal-600 transition-colors">Corporate Wellness</a>
+            <a href="#sponsorship" className="hover:text-teal-600 transition-colors">Become a Sponsor</a>
           </nav>
-          <a href="#contact" className="hidden md:inline-flex items-center justify-center px-5 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 shadow-sm transition">
+          <a href="#contact" className="hidden md:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-teal-600 hover:bg-teal-700 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
             Partner With Us
           </a>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-teal-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-900 to-teal-700 opacity-90"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 space-y-6">
-            <span className="uppercase tracking-wider text-teal-200 font-semibold text-sm">B2B Mental Health Solutions</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-              Invest in Your Team's Mental Well-being
+      <section className="relative bg-stone-900 text-white overflow-hidden">
+        {/* Soft, warm background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-stone-800 to-stone-900 opacity-95"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2 space-y-8">
+            <span className="inline-block py-1 px-3 rounded-full bg-teal-800/50 border border-teal-500/30 text-teal-200 text-sm font-medium tracking-wide">
+              Mental Health for All
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-stone-50">
+              Healing minds, <br/>
+              <span className="text-teal-400">strengthening communities.</span>
             </h1>
-            <p className="text-lg md:text-xl text-teal-100 max-w-lg">
-              Partner with Emoción Sana to provide expert psychological support to your associates. Reduce burnout, boost productivity, and build a thriving corporate culture.
+            <p className="text-lg md:text-xl text-stone-300 max-w-lg leading-relaxed">
+              We believe everyone deserves emotional support. By partnering with Emoción Sana, you're not just investing in your team's mental well-being—you're funding life-saving psychological care for vulnerable populations.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#contact" className="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-teal-900 bg-white hover:bg-slate-100 shadow transition">
-                Schedule a Consultation
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <a href="#contact" className="inline-flex justify-center items-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-teal-900 bg-amber-400 hover:bg-amber-300 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                Fund Our Mission
               </a>
-              <a href="#impact" className="inline-flex justify-center items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-teal-700 transition">
-                View Impact Report
+              <a href="#solutions" className="inline-flex justify-center items-center px-8 py-3.5 border border-stone-400 text-base font-medium rounded-full text-stone-100 hover:bg-stone-800 hover:border-stone-300 transition-all">
+                Corporate Plans
               </a>
             </div>
           </div>
-          <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center">
-             {/* Abstract illustration placeholder for hero */}
-            <div className="w-full max-w-md aspect-video bg-teal-700/50 rounded-xl border border-teal-500/30 flex items-center justify-center backdrop-blur-sm shadow-2xl">
-              <span className="text-teal-200 font-medium">[ Hero Image Placeholder ]</span>
+          <div className="md:w-1/2 flex justify-center w-full">
+             {/* Emotive imagery placeholder */}
+            <div className="w-full max-w-lg aspect-[4/3] bg-stone-800/50 rounded-3xl border border-stone-700/50 flex flex-col items-center justify-center backdrop-blur-sm shadow-2xl p-6 text-center">
+              <span className="text-4xl mb-4">🫂</span>
+              <span className="text-stone-300 font-medium text-lg">[ Image: A compassionate therapist smiling warmly at a community member in a bright, sunlit room ]</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Value Proposition for Corporates */}
-      <section id="solutions" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900">Why Partner with Emoción Sana?</h2>
-            <p className="mt-4 text-lg text-slate-600">
-              An optimal emotional state empowers your workforce to live healthier, happier, and more productive lives. We provide scalable mental health frameworks for modern organizations.
+      {/* The Mission / Heart of the Nonprofit */}
+      <section id="mission" className="py-24 bg-stone-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-800">The Power of Emotional Health</h2>
+          <p className="text-xl text-stone-600 leading-relaxed">
+            Unprocessed trauma and chronic stress don't just affect individuals; they fracture families and communities. Our foundation provides accessible, professional psychological support to those who need it most, helping them process, heal, and rebuild their lives with dignity.
+          </p>
+          <div className="pt-8">
+             <div className="w-24 h-1 bg-teal-500 mx-auto rounded-full"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Proposition for Corporates (The B2B Engine) */}
+      <section id="solutions" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-800">Why Companies Partner With Us</h2>
+            <p className="mt-6 text-lg text-stone-600 leading-relaxed">
+              Bring the heart of our mission into your workplace. Our corporate mental health solutions reduce burnout, boost productivity, and fulfill your CSR goals—all while funding community care.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition">
-              <div className="w-12 h-12 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center mb-6 text-xl">📈</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Boosted Productivity</h3>
-              <p className="text-slate-600">Mental well-being directly correlates with focused, high-performing teams. Reduce absenteeism and presenteeism.</p>
+            <div className="p-10 rounded-3xl bg-stone-50 border border-stone-100 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-sm">🌱</div>
+              <h3 className="text-xl font-bold text-stone-800 mb-4">Nurture Your Team</h3>
+              <p className="text-stone-600 leading-relaxed">Provide your employees with confidential, expert psychological care. Reduce absenteeism and create a workplace culture rooted in empathy and resilience.</p>
             </div>
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition">
-              <div className="w-12 h-12 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center mb-6 text-xl">🤝</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Expert Care Network</h3>
-              <p className="text-slate-600">Give your team access to a vetted network of clinical psychologists and mental health experts tailored to their needs.</p>
+            <div className="p-10 rounded-3xl bg-stone-50 border border-stone-100 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="w-14 h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-sm">🤝</div>
+              <h3 className="text-xl font-bold text-stone-800 mb-4">Fulfill CSR Goals</h3>
+              <p className="text-stone-600 leading-relaxed">Every corporate plan subsidizes free therapy for vulnerable individuals. Turn your HR benefits into a powerful driver for Corporate Social Responsibility.</p>
             </div>
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition">
-              <div className="w-12 h-12 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center mb-6 text-xl">📊</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Actionable Insights</h3>
-              <p className="text-slate-600">Receive aggregated, anonymized metrics on organizational wellness to guide your HR strategies and measure ROI.</p>
+            <div className="p-10 rounded-3xl bg-stone-50 border border-stone-100 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-sm">📈</div>
+              <h3 className="text-xl font-bold text-stone-800 mb-4">Measurable Impact</h3>
+              <p className="text-stone-600 leading-relaxed">Receive detailed impact reports outlining the lives touched by your sponsorship, alongside anonymized wellness metrics for your own organization.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Impact Metrics (Placeholder) */}
-      <section id="impact" className="py-20 bg-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Impact Metrics */}
+      <section id="impact" className="py-20 bg-teal-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white">Our Impact at a Glance</h2>
-            <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
-              Real results driving real change across our corporate and community partners. (Metrics to be updated from Drive).
+            <h2 className="text-3xl font-bold text-stone-50">Healing by the Numbers</h2>
+            <p className="mt-4 text-teal-100 max-w-2xl mx-auto text-lg">
+              The real-world difference our community and corporate partners make together.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-800">
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-extrabold text-teal-400">10k+</div>
-              <div className="text-sm text-slate-400 uppercase tracking-wide">Sessions Delivered</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-teal-800">
+            <div className="space-y-3">
+              <div className="text-4xl md:text-5xl font-bold text-amber-400">10k+</div>
+              <div className="text-sm text-teal-100 font-medium tracking-wide">Sessions Delivered</div>
             </div>
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-extrabold text-teal-400">50+</div>
-              <div className="text-sm text-slate-400 uppercase tracking-wide">Corporate Allies</div>
+            <div className="space-y-3">
+              <div className="text-4xl md:text-5xl font-bold text-amber-400">50+</div>
+              <div className="text-sm text-teal-100 font-medium tracking-wide">Corporate Allies</div>
             </div>
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-extrabold text-teal-400">95%</div>
-              <div className="text-sm text-slate-400 uppercase tracking-wide">Satisfaction Rate</div>
+            <div className="space-y-3">
+              <div className="text-4xl md:text-5xl font-bold text-amber-400">95%</div>
+              <div className="text-sm text-teal-100 font-medium tracking-wide">Satisfaction Rate</div>
             </div>
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-extrabold text-teal-400">30%</div>
-              <div className="text-sm text-slate-400 uppercase tracking-wide">Avg. ROI (HR)</div>
+            <div className="space-y-3">
+              <div className="text-4xl md:text-5xl font-bold text-amber-400">100%</div>
+              <div className="text-sm text-teal-100 font-medium tracking-wide">Heart Driven</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Corporate Sponsorship & Donors */}
-      <section id="sponsorship" className="py-20 bg-teal-50">
+      {/* Corporate Sponsorship & Donors (Conversion) */}
+      <section id="sponsorship" className="py-24 bg-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="md:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold text-teal-900">Become a Corporate Sponsor</h2>
-              <p className="text-lg text-teal-800/80">
-                Beyond internal benefits, your organization can sponsor mental health programs for vulnerable communities. Fulfill your CSR goals while making a tangible difference in society.
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="lg:w-1/2 space-y-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-stone-800">Become a Corporate Sponsor</h2>
+              <p className="text-lg text-stone-600 leading-relaxed">
+                By sponsoring Emoción Sana, your organization directly funds community healing while gaining powerful tax advantages and positive brand association. Let's build a healthier society, together.
               </p>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-3 mt-1">✓</span>
-                  <span className="text-teal-900">Tax-deductible contributions (where applicable).</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-3 mt-1">✓</span>
-                  <span className="text-teal-900">Co-branded community wellness workshops.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-3 mt-1">✓</span>
-                  <span className="text-teal-900">Detailed impact reporting for your ESG metrics.</span>
-                </li>
-              </ul>
-              <div className="pt-4">
-                <a href="#contact" className="inline-flex items-center px-6 py-3 border border-teal-600 text-base font-medium rounded-md text-teal-700 hover:bg-teal-100 transition">
-                  Download Sponsorship Deck
-                </a>
+              
+              <div className="space-y-6 pt-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-teal-600 font-bold">✓</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-stone-800">Tax-Deductible Contributions</h4>
+                    <p className="text-stone-600 mt-1">Optimize your philanthropic budget with recognized tax benefits.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-teal-600 font-bold">✓</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-stone-800">Brand Alignment</h4>
+                    <p className="text-stone-600 mt-1">Co-branded community wellness workshops showcasing your commitment to social good.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-teal-600 font-bold">✓</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-stone-800">ESG Reporting</h4>
+                    <p className="text-stone-600 mt-1">Receive comprehensive impact reports to bolster your ESG metrics.</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="md:w-1/2 bg-white p-8 rounded-2xl shadow-xl">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Let's Talk</h3>
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1">Company Name</label>
-                  <input type="text" className="w-full px-4 py-2 rounded-md border border-slate-300 focus:ring-teal-500 focus:border-teal-500" placeholder="Acme Corp" />
-                </div>
-                <div className="grid grid-cols-2 gap-4">
+
+            <div id="contact" className="lg:w-1/2 w-full max-w-md lg:max-w-none bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-stone-100 relative">
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-amber-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-teal-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+              
+              <div className="relative">
+                <h3 className="text-2xl font-bold text-stone-800 mb-2">Let's Talk</h3>
+                <p className="text-stone-500 mb-8">Fill out the form below and our partnerships team will reach out.</p>
+                
+                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
                   <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-1">First Name</label>
-                    <input type="text" className="w-full px-4 py-2 rounded-md border border-slate-300 focus:ring-teal-500 focus:border-teal-500" placeholder="Jane" />
+                    <label className="block text-sm font-medium text-stone-700 mb-1.5">Company Name</label>
+                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition-shadow" placeholder="Acme Corp" />
+                  </div>
+                  <div className="grid grid-cols-2 gap-5">
+                    <div>
+                      <label className="block text-sm font-medium text-stone-700 mb-1.5">First Name</label>
+                      <input type="text" className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition-shadow" placeholder="Jane" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-stone-700 mb-1.5">Last Name</label>
+                      <input type="text" className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition-shadow" placeholder="Doe" />
+                    </div>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-1">Last Name</label>
-                    <input type="text" className="w-full px-4 py-2 rounded-md border border-slate-300 focus:ring-teal-500 focus:border-teal-500" placeholder="Doe" />
+                    <label className="block text-sm font-medium text-stone-700 mb-1.5">Work Email</label>
+                    <input type="email" className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition-shadow" placeholder="jane@acmecorp.com" />
                   </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1">Work Email</label>
-                  <input type="email" className="w-full px-4 py-2 rounded-md border border-slate-300 focus:ring-teal-500 focus:border-teal-500" placeholder="jane@acmecorp.com" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1">Inquiry Type</label>
-                  <select className="w-full px-4 py-2 rounded-md border border-slate-300 focus:ring-teal-500 focus:border-teal-500">
-                    <option>Employee Benefit Program</option>
-                    <option>Corporate Sponsorship / CSR</option>
-                    <option>General Partnership</option>
-                  </select>
-                </div>
-                <button className="w-full py-3 px-4 rounded-md shadow bg-teal-600 text-white font-medium hover:bg-teal-700 transition">
-                  Request Information
-                </button>
-              </form>
+                  <div>
+                    <label className="block text-sm font-medium text-stone-700 mb-1.5">Partnership Interest</label>
+                    <select className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition-shadow bg-white">
+                      <option>Corporate Sponsorship / Donors</option>
+                      <option>Employee Mental Health Benefits</option>
+                      <option>Other Collaboration</option>
+                    </select>
+                  </div>
+                  <button className="w-full py-4 px-4 mt-2 rounded-xl shadow-md bg-teal-600 text-white font-medium hover:bg-teal-700 transition-all transform hover:-translate-y-0.5">
+                    Request Information
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+      <footer className="bg-stone-900 text-stone-400 py-16 border-t border-stone-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-12">
           <div className="col-span-2">
-            <div className="flex items-center gap-2 text-xl font-bold text-white mb-4">
-              <div className="w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center text-xs">ES</div>
+            <div className="flex items-center gap-3 text-xl font-bold text-stone-50 mb-6">
+              <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-emerald-600 rounded-full flex items-center justify-center text-xs text-white">ES</div>
               Emoción Sana
             </div>
-            <p className="mb-4 max-w-sm">
-              Empowering organizations and communities through accessible, professional mental health support.
+            <p className="mb-6 max-w-md leading-relaxed">
+              Empowering organizations and healing communities through accessible, professional emotional support.
             </p>
           </div>
           <div>
-            <h4 className="text-white font-medium mb-4">Solutions</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-teal-400 transition">For Companies</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition">For Sponsors</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition">Impact Reports</a></li>
+            <h4 className="text-stone-50 font-semibold mb-6">Partner With Us</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#" className="hover:text-teal-400 transition-colors">Corporate Wellness</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition-colors">Sponsorships</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition-colors">Impact Reports</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-medium mb-4">Company</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-teal-400 transition">About Us</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition">Contact</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition">Privacy Policy</a></li>
+            <h4 className="text-stone-50 font-semibold mb-6">Organization</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#" className="hover:text-teal-400 transition-colors">Our Story</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition-colors">Contact</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-sm text-center">
-          © {new Date().getFullYear()} Emoción Sana. All rights reserved.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-stone-800 text-sm text-center flex flex-col md:flex-row justify-between items-center gap-4">
+          <span>© {new Date().getFullYear()} Emoción Sana. All rights reserved.</span>
+          <span className="flex items-center gap-1">Made with <span className="text-amber-500">♥</span> for the community.</span>
         </div>
       </footer>
     </div>
