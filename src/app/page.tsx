@@ -57,9 +57,12 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 flex justify-center w-full">
              {/* Emotive imagery placeholder */}
-            <div className="w-full max-w-lg aspect-[4/3] bg-stone-800/50 rounded-3xl border border-stone-700/50 flex flex-col items-center justify-center backdrop-blur-sm shadow-2xl p-6 text-center">
-              <span className="text-4xl mb-4">🫂</span>
-              <span className="text-stone-300 font-medium text-lg">[ Image: A compassionate therapist smiling warmly at a community member in a bright, sunlit room ]</span>
+            <div className="w-full max-w-lg aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative border border-stone-700/50">
+              <img 
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1000" 
+                alt="Compassionate therapist and community member" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -98,6 +101,13 @@ export default function Home() {
           <p className="text-xl text-stone-600 leading-relaxed">
             Unprocessed trauma and chronic stress don't just affect individuals; they fracture families and communities. Our foundation provides accessible, professional psychological support to those who need it most, helping them process, heal, and rebuild their lives with dignity.
           </p>
+          <div className="w-full rounded-3xl overflow-hidden shadow-2xl mt-12 mb-8">
+            <img 
+              src="https://images.unsplash.com/photo-1529156069898-49953eb1b5ce?auto=format&fit=crop&q=80&w=1000" 
+              alt="Diverse community connecting"
+              className="w-full h-80 object-cover"
+            />
+          </div>
           <div className="pt-8">
              <div className="w-24 h-1 bg-teal-500 mx-auto rounded-full"></div>
           </div>
@@ -109,9 +119,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-stone-800">Why Companies Partner With Us</h2>
-            <p className="mt-6 text-lg text-stone-600 leading-relaxed">
+            <p className="mt-6 text-lg text-stone-600 leading-relaxed mb-12">
               Bring the heart of our mission into your workplace. Our corporate mental health solutions reduce burnout, boost productivity, and fulfill your CSR goals—all while funding community care.
             </p>
+          </div>
+
+          <div className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl mb-16">
+            <img 
+              src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=1000" 
+              alt="Corporate wellness and CSR initiatives"
+              className="w-full h-96 object-cover"
+            />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
