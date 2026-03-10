@@ -165,6 +165,122 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Corporate Sponsorship Tiers */}
+      <section id="tiers" className="py-24 bg-white border-t border-stone-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-800">Corporate Sponsorship Tiers</h2>
+            <p className="mt-4 text-lg text-stone-600">
+              Partner with us to make a lasting impact. Choose the level of support that aligns with your organization's philanthropic goals.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-center">
+            {/* Tier 1: Community Supporter */}
+            <div className="bg-stone-50 rounded-3xl p-8 border border-stone-200 shadow-sm flex flex-col h-full relative">
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-stone-800">Community Supporter</h3>
+                <div className="mt-4 flex items-baseline text-4xl font-extrabold text-stone-900">
+                  $5,000
+                  <span className="ml-1 text-xl font-medium text-stone-500">/year</span>
+                </div>
+                <p className="mt-4 text-stone-600 leading-relaxed">
+                  Directly funds 50 specialized therapy sessions.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-4 flex-1">
+                <li className="flex gap-3">
+                  <span className="text-teal-600 font-bold">✓</span>
+                  <span className="text-stone-600">Logo on our Partner wall</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-teal-600 font-bold">✓</span>
+                  <span className="text-stone-600">Quarterly impact newsletter</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-teal-600 font-bold">✓</span>
+                  <span className="text-stone-600">Tax-deductible receipt</span>
+                </li>
+              </ul>
+              <a href="#contact" className="mt-8 block w-full py-3 px-4 border border-teal-600 rounded-xl text-center font-medium text-teal-700 bg-transparent hover:bg-teal-50 transition-colors">
+                Partner With Us
+              </a>
+            </div>
+
+            {/* Tier 2: Corporate Champion */}
+            <div className="bg-teal-900 rounded-3xl p-8 border border-teal-700 shadow-xl flex flex-col h-full relative transform md:-translate-y-4">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <span className="bg-amber-400 text-teal-950 text-sm font-bold uppercase tracking-wider py-1 px-4 rounded-full">
+                  Most Popular
+                </span>
+              </div>
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-stone-50">Corporate Champion</h3>
+                <div className="mt-4 flex items-baseline text-4xl font-extrabold text-white">
+                  $15,000
+                  <span className="ml-1 text-xl font-medium text-teal-200">/year</span>
+                </div>
+                <p className="mt-4 text-teal-100 leading-relaxed">
+                  Funds 150 therapy sessions + provides one dedicated mental health workshop for your own corporate employees.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-4 flex-1">
+                <li className="flex gap-3">
+                  <span className="text-amber-400 font-bold">✓</span>
+                  <span className="text-teal-50">All Community Supporter perks</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-amber-400 font-bold">✓</span>
+                  <span className="text-teal-50">CSR PR toolkit</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-amber-400 font-bold">✓</span>
+                  <span className="text-teal-50">Highlighted logo placement</span>
+                </li>
+              </ul>
+              <a href="#contact" className="mt-8 block w-full py-3 px-4 rounded-xl text-center font-medium text-teal-900 bg-amber-400 hover:bg-amber-300 shadow-lg transition-colors">
+                Partner With Us
+              </a>
+            </div>
+
+            {/* Tier 3: Institutional Partner */}
+            <div className="bg-stone-50 rounded-3xl p-8 border border-stone-200 shadow-sm flex flex-col h-full relative">
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-stone-800">Institutional Partner</h3>
+                <div className="mt-4 flex items-baseline text-4xl font-extrabold text-stone-900">
+                  $50,000+
+                  <span className="ml-1 text-xl font-medium text-stone-500">/year</span>
+                </div>
+                <p className="mt-4 text-stone-600 leading-relaxed">
+                  Fully funds an entire vulnerable community program for a year.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-4 flex-1">
+                <li className="flex gap-3">
+                  <span className="text-teal-600 font-bold">✓</span>
+                  <span className="text-stone-600">Custom quarterly ESG impact reporting</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-teal-600 font-bold">✓</span>
+                  <span className="text-stone-600">Dedicated account manager</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-teal-600 font-bold">✓</span>
+                  <span className="text-stone-600">Co-branded psychoeducational campaigns</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-teal-600 font-bold">✓</span>
+                  <span className="text-stone-600">3 corporate employee workshops</span>
+                </li>
+              </ul>
+              <a href="#contact" className="mt-8 block w-full py-3 px-4 border border-teal-600 rounded-xl text-center font-medium text-teal-700 bg-transparent hover:bg-teal-50 transition-colors">
+                Partner With Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Corporate Sponsorship & Donors (Conversion) */}
       <section id="sponsorship" className="py-24 bg-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
