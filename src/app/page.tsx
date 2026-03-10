@@ -65,6 +65,32 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trusted By / Partners & Allies Logo Cloud */}
+      <section className="py-12 border-b border-stone-200 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-center text-sm font-semibold text-stone-500 tracking-wide uppercase mb-8">
+            Trusted By Our Partners & Allies
+          </p>
+          <div className="flex flex-wrap justify-center gap-10 md:gap-16 items-center opacity-60 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0">
+            <div className="flex items-center justify-center">
+              <span className="text-xl font-serif font-bold text-stone-800">US Congress</span>
+            </div>
+            <div className="flex items-center justify-center">
+              <span className="text-xl font-bold text-stone-800">Habitat for Humanity</span>
+            </div>
+            <div className="flex items-center justify-center text-center leading-tight">
+              <span className="text-lg font-bold text-stone-800">Fundación<br/>Baltazar y Nicolás</span>
+            </div>
+            <div className="flex items-center justify-center">
+              <span className="text-xl font-bold text-stone-800">Fundación Teletón</span>
+            </div>
+            <div className="flex items-center justify-center">
+              <span className="text-2xl font-black italic tracking-tighter text-stone-800">LWI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* The Mission / Heart of the Nonprofit */}
       <section id="mission" className="py-24 bg-stone-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
