@@ -103,7 +103,7 @@ export default function Home() {
           </p>
           <div className="w-full rounded-3xl overflow-hidden shadow-2xl mt-12 mb-8">
             <img 
-              src="https://images.unsplash.com/photo-1529156069898-49953eb1b5ce?auto=format&fit=crop&q=80&w=1000" 
+              src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=formathttps://images.unsplash.com/photo-1529156069898-49953eb1b5ce?auto=format&fit=crop&q=80&w=1000fit=crophttps://images.unsplash.com/photo-1529156069898-49953eb1b5ce?auto=format&fit=crop&q=80&w=1000q=80https://images.unsplash.com/photo-1529156069898-49953eb1b5ce?auto=format&fit=crop&q=80&w=1000w=1000" 
               alt="Diverse community connecting"
               className="w-full h-80 object-cover"
             />
